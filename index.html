@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/LangTrans_favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap"
+    />
+    <title>Welcome to Language Translator!</title>
+  </head>
+
+  <body>
+    <div id="name">
+      <h1 title="Language Translator app using HTML, CSS & JS">Language Translator</h1>
+      <h4 title="Contact details in the dropdown below">
+        Created by <br />
+        Krishna Patil
+      </h4>
+    </div>
+
+    <!-- Translator menu -->
+    <div id="menu">
+      <h2 class="menuContents">
+        <a
+          href="https://youtu.be/dQw4w9WgXcQ?si=n5-jCnyKCHAgpFRc"
+          target="_blank"
+          title="Welcome to Language Translator!"
+          >Main Menu</a
+        >
+      </h2>
+      <a href="translate.html"
+        ><button id="translate" class="menuContents" title="Start translation!">
+          Start translating!
+        </button></a
+      >
+      <select
+        name="links"
+        id="links"
+        size="1"
+        onchange="window.location.href=this.value;"
+        title="Social links"
+      >
+        <option value="#" selected>Select option</option>
+        <option
+          value="https://github.com/KrishnaPatil-19"
+          title="Krishna's GitHub profile"
+        >
+          My GitHub
+        </option>
+        <option
+          value="https://krishnapatil-19.github.io/Portfolio-Website/"
+          title="Krishna's Portfolio"
+        >
+          My Portfolio
+        </option>
+        <option
+          value="mailto:krishnapatilcontact@gmail.com"
+          title="Email Krishna"
+        >
+          My E-Mail
+        </option>
+      </select>
+    </div>
+  </body>
+</html>
