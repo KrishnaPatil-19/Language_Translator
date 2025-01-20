@@ -1,0 +1,126 @@
+#menu {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 320px; /* Set a fixed width for the container */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #d0cece;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.474);
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  text-align: center; /* Center the text inside the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  gap:4px
+}
+
+.menuContents {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0; /* Adjust the spacing between elements */
+}
+
+.menuContents,
+#menu button,
+#name h1,
+#name h4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu button {
+  background-color: #f0f0f0;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px; /* Reduce spacing between buttons */
+}
+
+#menu button a {
+  text-decoration: none;
+  color: black;
+}
+
+#menu button:hover {
+  background-color: #e0e0e0;
+}
+
+#name {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#name h1 {
+  width: 320px; /* Set a fixed width for the container */
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center the text inside the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#name h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px; /* Set a fixed width for the container */
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center the text inside the container */
+  z-index: 10;
+}
+
+#name > h4 {
+  color: #07ca55;
+}
+
+div h1,
+div h4 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+html {
+  background-color: #5372f0;
+}
+
+#links {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #ffffff; /* White background for the dropdown */
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  appearance: none; /* Remove default dropdown styling (optional) */
+  text-align: center;
+}
+
+#links:hover {
+  background-color: #bababa; /* Light gray on hover */
+}
+
+#links:focus {
+  outline: none; /* Remove the outline on focus */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on focus */
+}
+
+#menu > h2 > a {
+  text-decoration: none;
+  color: black;
+}

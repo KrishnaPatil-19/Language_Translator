@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Language Translator Application -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Language Translator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CDN Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="translate.css" />
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/LangTrans_favicon.png" />
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="container">
+      <div class="wrapper">
+        <!-- Text Areas for Input and Output -->
+        <div class="text-input">
+          <textarea
+            spellcheck="false"
+            class="from-text"
+            placeholder="Enter text" title="Enter the text to be translated here"
+          ></textarea>
+          <textarea
+            spellcheck="false"
+            readonly
+            disabled
+            class="to-text"
+            placeholder="Translation" title="The translated text will appear here"
+          ></textarea>
+        </div>
+        <!-- Controls for Languages and Actions -->
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <!-- Volume and Copy Icons for Input Text -->
+              <i id="from" class="fas fa-volume-up" title="Voice output for text to be translated"></i>
+              <i id="from" class="fas fa-copy" title="Copy the text entered"></i>
+            </div>
+            <!-- Language Dropdown for Source Language -->
+            <select title="Select the language of the text entered"></select>
+          </li>
+          <li class="exchange">
+            <!-- Icon to Exchange Source and Target Languages -->
+            <i class="fas fa-exchange-alt" title="Swap languages and text"></i>
+          </li>
+          <li class="row to">
+            <!-- Language Dropdown for Target Language -->
+            <select title="Select the language the text should be translated in"></select>
+            <div class="icons">
+              <!-- Volume and Copy Icons for Output Text -->
+              <i id="to" class="fas fa-volume-up" title="Voice output for translated text"></i>
+              <i id="to" class="fas fa-copy" title="Copy the translated text"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Translate Button -->
+      <button title="Translate the text entered">Translate Text</button><br>
+      <a href="index.html"><button title="Go back to Main Menu">Back to Main Menu</button></a>
+    </div>
+
+    <!-- External JavaScript Files -->
+    <script src="js/countries.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
