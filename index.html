@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/LangTrans_favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap"
+    />
+    <title>Welcome to Language Translator!</title>
+  </head>
+
+  <body>
+    <div id="name">
+      <h1 title="Language Translator app using HTML, CSS & JS">Language Translator</h1>
+      <h4 title="Contact details in the dropdown below">
+        Created by <br />
+        Krishna Patil & Ketan Patil
+      </h4>
+    </div>
+
+    <!-- Translator menu -->
+    <div id="menu">
+      <h2 class="menuContents">
+        <a
+          href="https://youtu.be/dQw4w9WgXcQ?si=n5-jCnyKCHAgpFRc"
+          target="_blank"
+          title="Welcome to Language Translator!"
+          >Main Menu</a
+        >
+      </h2>
+      <a href="translate.html"
+        ><button id="translate" class="menuContents" title="Start translation!">
+          Start translating!
+        </button></a
+      >
+      <a href="Language_Translator_Report_toBeRevised.pdf" target="_blank"
+        ><button
+          id="dlReport"
+          class="menuContents"
+          title="Download the project report (to be revised)"
+        >
+          Download project report
+        </button></a
+      >
+      <select
+        name="links"
+        id="links"
+        size="1"
+        onchange="window.location.href=this.value;"
+        title="Social links"
+      >
+        <option value="#" selected>Select option</option>
+        <option
+          value="https://github.com/KrishnaPatil-19"
+          title="Krishna's GitHub profile"
+        >
+          Krishna's GitHub
+        </option>
+        <option
+          value="https://krishnapatil-19.github.io/Portfolio-Website/"
+          title="Krishna's Portfolio"
+        >
+          Krishna's Portfolio
+        </option>
+        <option
+          value="mailto:krishnapatilcontact@gmail.com"
+          title="Email Krishna"
+        >
+          Krishna's E-Mail
+        </option>
+        <option
+          value="https://github.com/ketanpatil7726"
+          title="Ketan's GitHub profile"
+        >
+          Ketan's GitHub
+        </option>
+        <option value="mailto:ketanpatil7726@gmail.com" title="Email Ketan">
+          Ketan's E=Mail
+        </option>
+      </select>
+    </div>
+  </body>
+</html>
