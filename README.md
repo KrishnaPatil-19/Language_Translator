@@ -5,15 +5,15 @@ A **web-based language translation application** built using **HTML, CSS, and Ja
 
 ## 📌 Table of Contents  
 
-- [Features](#features)
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Project Structure](#project-structure)  
-- [Technologies Used](#technologies-used)  
-- [Contributing](#contributing)  
-- [Future Enhancements](#future-enhancements)  
-- [License](#license)  
-- [Contact Us](#contact)
+- [Features](#🚀-features)
+- [Installation](#💻-installation)  
+- [Usage](#📖-usage)  
+- [Project Structure](#🏗️-project-structure)  
+- [Technologies Used](#🛠️-technologies-used)  
+- [Contributing](#🤝-contributing)  
+- [Future Enhancements](#🔮-future-enhancements)  
+- [License](#📜-license)  
+- [Contact Us](#📧-contact)
 
 ---
 
@@ -93,7 +93,7 @@ Want to contribute? Follow these steps:
 
 This project is licensed under the MIT License. You are free to use, modify, and distribute this project with proper attribution.
 
-## 📧 Contact
+## 📧 Contact Us
 For any queries or feedback, reach out:
 - 📩 E-Mail: krishnapatilcontact@gmail.com
 - 🌐 GitHub: KrishnaPatil-19
