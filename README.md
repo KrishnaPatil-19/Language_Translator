@@ -13,7 +13,7 @@ A **web-based language translation application** built using **HTML, CSS, and Ja
 - [Contributing](#🤝-contributing)  
 - [Future Enhancements](#🔮-future-enhancements)  
 - [License](#📜-license)  
-- [Contact Us](#📧-contact)
+- [Contact Us](#📧-contact-us)
 
 ---
 
