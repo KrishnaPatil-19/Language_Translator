@@ -14,7 +14,9 @@
 
   <body>
     <div id="name">
-      <h1 title="Language Translator app using HTML, CSS & JS">Language Translator</h1>
+      <h1 title="Language Translator app using HTML, CSS & JS">
+        Language Translator
+      </h1>
       <h4 title="Contact details in the dropdown below">
         Created by <br />
         Krishna Patil & Ketan Patil
@@ -36,7 +38,9 @@
           Start translating!
         </button></a
       >
-      <a href="assets/Language Translator report_word - Main.pdf" target="_blank"
+      <a
+        href="assets/Language Translator report_word - Main.pdf"
+        target="_blank"
         ><button
           id="dlReport"
           class="menuContents"
@@ -45,15 +49,13 @@
           Download project report
         </button></a
       >
-      <a href="assets/Language Translator PPT.pdf" target="_blank"
-        ><button
-          id="dlPPT"
-          class="menuContents"
-          title="Download the project PPT"
-        >
-          Download project PPT
-        </button></a
+      <button
+        id="dlPPT"
+        class="menuContents"
+        title="Download the project PPT (click once for PDF & twice for PPTX)"
       >
+        Download project PPT
+      </button>
       <select
         name="links"
         id="links"
@@ -91,5 +93,34 @@
         </option>
       </select>
     </div>
+
+    <script>
+      const button = document.getElementById("dlPPT");
+      let clickCount = 0;
+      let timer;
+    
+      button.addEventListener("click", () => {
+        clickCount++;
+    
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          let link = document.createElement("a"); // Create a temporary link element
+    
+          if (clickCount === 1) {
+            link.href = "assets/Language Translator PPT.pdf"; 
+            link.download = "Language Translator PPT.pdf"; // Ensures the file downloads
+          } else if (clickCount === 2) {
+            link.href = "assets/Language Translator PPT.pptx"; 
+            link.download = "Language Translator PPT.pptx"; // Ensures the file downloads
+          }
+    
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link); // Clean up
+    
+          clickCount = 0; // Reset click count
+        }, 300);
+      });
+    </script>
   </body>
 </html>
